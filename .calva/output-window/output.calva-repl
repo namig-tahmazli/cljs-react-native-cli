@@ -37,23 +37,7 @@ You can configure this with the setting:
 ; 
 
 ; Starting Jack-in Terminal: (cd /Users/namigtahmazli/ClojureProj/CLJSNativeCLI; npx shadow-cljs -d cider/cider-nrepl:0.47.1 watch :app)
-; Interrupting Jack-in process.
-; Jacking in...
-; Connecting using "shadow-cljs" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in Terminal: (cd /Users/namigtahmazli/ClojureProj/CLJSNativeCLI; npx shadow-cljs -d cider/cider-nrepl:0.47.1 watch :app)
-; Interrupting Jack-in process.
-; Jacking in...
-; Connecting using "shadow-cljs" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in Terminal: (cd /Users/namigtahmazli/ClojureProj/CLJSNativeCLI; npx shadow-cljs -d cider/cider-nrepl:0.47.1 watch :app)
-; Using host:port localhost:62957 ...
+; Using host:port localhost:51797 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -62,8 +46,6 @@ clj꞉shadow.user꞉> 
 ; Creating cljs repl session...
 ; Connecting cljs repl: shadow-cljs...
 ; Please start your ClojureScript app (load it in the browser, or whatever is appropriate) so that Calva can connect to its REPL...
-; Waiting for Shadow CLJS runtimes, start your CLJS app...
-; Waiting for Shadow CLJS runtimes, start your CLJS app...
 ; Waiting for Shadow CLJS runtimes, start your CLJS app...
 ; Waiting for Shadow CLJS runtimes, start your CLJS app...
 ; Waiting for Shadow CLJS runtimes, start your CLJS app...
@@ -79,70 +61,334 @@ clj꞉user꞉> 
 ; Jack-in done.
 clj꞉user꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.41s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.32s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.37s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.32s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.37s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.29s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.32s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.24s)
-; [:app] Compiling ...
-; [:app] Build completed. (89 files, 1 compiled, 0 warnings, 0.36s)
+; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.87s)
 nil
-cljs꞉root꞉> 
+clj꞉db꞉> 
+:repl/exception!
+; 
+; 
+; Execution error (ReferenceError) at (<cljs repl>:1).
+; Property 're_frame' doesn't exist
+clj꞉db꞉> 
+#'db/db
+clj꞉db꞉> 
+:repl/exception!
+; 
+; 
+; Execution error (ReferenceError) at (<cljs repl>:1).
+; Property 're_frame' doesn't exist
+clj꞉db꞉> 
+:repl/exception!
+; 
+; 
+; Execution error (ReferenceError) at (<cljs repl>:1).
+; Property 're_frame' doesn't exist
+clj꞉db꞉> 
+:repl/exception!
+; 
+; 
+; Execution error (ReferenceError) at (<cljs repl>:1).
+; Property 're_frame' doesn't exist
+; 
+; 
+; Execution error (ReferenceError) at (<cljs repl>:1).
+; Property 're_frame' doesn't exist
+; 
+; 
+; Execution error (ReferenceError) at (<cljs repl>:1).
+; Property 're_frame' doesn't exist
+clj꞉db꞉> 
 nil
-cljs꞉root꞉> 
+clj꞉app꞉> 
+; SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+; SLF4J: Defaulting to no-operation (NOP) logger implementation
+; SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+; [:app] Compiling ...
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.46s)
+#'app/root
+clj꞉app꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.40s)
 nil
-cljs꞉app꞉> 
-; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.62s)
-; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.26s)
-#'root/render-root
-cljs꞉root꞉> 
+clj꞉app꞉> 
 #'app/init
-cljs꞉app꞉> 
+clj꞉app꞉> 
+#'app/init
+clj꞉app꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.46s)
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.28s)
+nil
+clj꞉app꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.35s)
-#'root/render-root
-cljs꞉root꞉> 
-#'root/render-root
-cljs꞉root꞉> 
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.26s)
+#'app/init
+clj꞉app꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.31s)
-#'root/render-root
-cljs꞉root꞉> 
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.26s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.48s)
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.36s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.33s)
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.35s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.31s)
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.33s)
+#'app/root
+clj꞉app꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.36s)
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.31s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.40s)
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.36s)
+#'db/app-db
+clj꞉db꞉> 
+({:id :coeffects, :before #object [re_frame$cofx$coeffects_before], :after nil}
+ {:id :do-fx, :before nil, :after #object [re_frame$fx$do_fx_after]}
+ {:id :inject-global-interceptors,
+  :before #object [re_frame$std_interceptors$inject_global_interceptors_before],
+  :after nil}
+ {:id :db-handler,
+  :before #object [re_frame$std_interceptors$db_handler__GT_interceptor_$_db_handler_before],
+  :after nil})
+clj꞉db꞉> 
+({:id :coeffects, :before #object [re_frame$cofx$coeffects_before], :after nil}
+ {:id :do-fx, :before nil, :after #object [re_frame$fx$do_fx_after]}
+ {:id :inject-global-interceptors,
+  :before #object [re_frame$std_interceptors$inject_global_interceptors_before],
+  :after nil}
+ {:id :db-handler,
+  :before #object [re_frame$std_interceptors$db_handler__GT_interceptor_$_db_handler_before],
+  :after nil})
+clj꞉db꞉> 
+#object [re_frame$subs$subs_handler_fn]
+clj꞉db꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.31s)
+; [:app] Build completed. (133 files, 1 compiled, 0 warnings, 0.52s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.23s)
+; [:app] Build completed. (134 files, 2 compiled, 0 warnings, 0.43s)
+{:count 1}
+clj꞉db꞉> 
+{:count 1}
+clj꞉db꞉> 
+{:count 1}
+clj꞉db꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.26s)
+; [:app] Build completed. (134 files, 2 compiled, 0 warnings, 0.28s)
+#object [re_frame$subs$subs_handler_fn]
+clj꞉db꞉> 
+#'app/init
+clj꞉app꞉> 
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.26s)
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.24s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 1 compiled, 0 warnings, 0.24s)
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.47s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.26s)
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.55s)
 ; [:app] Compiling ...
-; [:app] Build completed. (90 files, 2 compiled, 0 warnings, 0.24s)
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.48s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.24s)
+nil
+clj꞉app꞉> 
+#'app/init
+clj꞉app꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.26s)
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.29s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.25s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.44s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.41s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.40s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.27s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.31s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.55s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.57s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.26s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.27s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.28s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.32s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.28s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.24s)
+#'app/root
+clj꞉app꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.26s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.27s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.26s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 1.21s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.24s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.31s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.27s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.32s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.54s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.34s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.45s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.33s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.25s)
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.50s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.91s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.83s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.31s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.26s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.30s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.30s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.32s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.28s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.27s)
+#object [Function]
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+nil
+clj꞉app꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.47s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 2 compiled, 0 warnings, 1.21s)
+; Jacking in...
+; Connecting using "shadow-cljs" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in Terminal: (cd /Users/namigtahmazli/ClojureProj/CLJSNativeCLI; npx shadow-cljs -d cider/cider-nrepl:0.47.1 watch :app)
+; nREPL Connection was closed
+; Using host:port localhost:53717 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉shadow.user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: shadow-cljs...
+; Please start your ClojureScript app (load it in the browser, or whatever is appropriate) so that Calva can connect to its REPL...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Connected session: cljs, repl: :app
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.cljs'
+nil
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.48s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.38s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.33s)
+; [:app] Compiling ...
+; [:app] Build completed. (134 files, 1 compiled, 0 warnings, 0.34s)
+; nREPL Connection was closed
