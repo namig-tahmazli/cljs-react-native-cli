@@ -10,8 +10,7 @@
     (reset! root-ref root)
 
     (if-not is-first-call?
-      (when-let [root @root-comp-ref]
-        (.forceUpdate ^js root))
+      (when-let [root @root-comp-ref] (.forceUpdate ^js root))
       (let [Root (r/create-class {:componentDidMount
                                   (fn [] (this-as this (reset! root-comp-ref this)))
                                   :componentWillUnmount 

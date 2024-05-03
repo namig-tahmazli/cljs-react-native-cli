@@ -14,6 +14,7 @@
             [flex.flex-wrap :refer [flex-wrap]]
             [flex.row-column-gap :refer [row-column-gap]]
             [flex.width-height :refer [width-height]]
+            [flex.absolute-relative-layout :refer [absolute-relative]]
             ["@react-navigation/native" :as nn]))
 
 (defn home [props]
@@ -29,11 +30,11 @@
    (ut/header-menu :nothing ["LayoutDirection" "JustifyContent"
                              "AlignItems" "AlignSelf" "AlignContent"
                              "FlexWrap" "FlexBasisShrinkGrow" "RowColumnGap"
-                             "WidthHeight"]
-                (fn [dest] (-> props .-navigation (.navigate dest))))])
+                             "WidthHeight" "AbsoluteRelative"]
+                   (fn [dest] (-> props .-navigation (.navigate dest))))])
 
 (defn counter []
-  (r/with-let [count (rf/subscribe [::db/get-count])]
+  (r/with-let [count (rf/subscribe [:db/get-count])]
     [:> rn/View {:style {:flex 1
                          :justify-content :center}}
      [:> rn/Text {:style {:font-size 33
@@ -45,15 +46,17 @@
 
 
 (defn nav-graph []
-  (r/with-let [nav-state (rf/subscribe [::db/get-nav-state])
+  (r/with-let [nav-state (rf/subscribe [:db/get-nav-state])
                get-nav-state (fn [] (when-let [state @nav-state] (-> state .-data .-state)))
-               save-state (fn [state] (rf/dispatch [::db/save-nav-state state]))
+               save-state (fn [state] (rf/dispatch [:db/save-nav-state state]))
 
                add-listener (fn [ref] (.addListener ref "state" save-state))
                nav-ref (fn [ref] (when ref (add-listener ref)))]
     [:> nn/NavigationContainer {:ref nav-ref
                                 :initial-state (get-nav-state)}
-     [:> Stack.Navigator
+     [:> Stack.Navigator {:screen-options {:navigation-bar-color :white
+                                           :status-bar-color :white
+                                           :status-bar-style :light}}
       (screen "Home" (fn [props] [home props]))
       (screen "Flex" (fn [props] [flex props]))
 
@@ -67,13 +70,24 @@
             ["FlexWrap" flex-wrap]
             ["FlexBasisShrinkGrow" basis-grow-shrink]
             ["RowColumnGap" row-column-gap]
-            ["WidthHeight" width-height]])]]))
+            ["WidthHeight" width-height]
+            ["AbsoluteRelative" absolute-relative]])]]))
+
+
+(defn app-screen []
+  [:> rn/SafeAreaView {:style {:flex 1
+                               :justify-content :center 
+                               :background-color :white}}
+  ;;  [:> rn/StatusBar {:transculent true
+  ;;                    :bar-style :light-content
+  ;;                    :background-color :white}]
+   (nav-graph)])
 
 (defn start
   {:dev/after-load true}
   []
-  (expo-root/expo-root (r/as-element [nav-graph])))
+  (expo-root/expo-root (r/as-element [app-screen])))
 
 (defn init []
-  (rf/dispatch-sync [::db/init-db])
+  (rf/dispatch-sync [:db/init-db])
   (start))

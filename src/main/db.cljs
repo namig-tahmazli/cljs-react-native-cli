@@ -11,18 +11,19 @@
                         :box-1 {:flex-basis "auto"
                                 :flex-shrink 0
                                 :flex-grow 0}
-                        
+
                         :box-2 {:flex-basis "auto"
                                 :flex-shrink 0
                                 :flex-grow 0}
-                        
+
                         :box-3 {:flex-basis "auto"
                                 :flex-shrink 0
                                 :flex-grow 0}
                         :gap {:row 0
                               :column 0}
-                        :dimen {:width "auto" 
-                                :height "auto"}}})
+                        :dimen {:width "auto"
+                                :height "auto"}
+                        :position :relative}})
 ;; Events
 (rf/reg-event-db
  ::init-db
@@ -41,7 +42,7 @@
 
 (rf/reg-event-db
  ::select-flex-direction
- (fn [db [_ direction]] 
+ (fn [db [_ direction]]
    (assoc-in db [:flex :direction] direction)))
 
 (rf/reg-event-db
@@ -93,6 +94,11 @@
  ::set-dimen
  (fn [db [_ key value]]
    (assoc-in db [:flex :dimen key] value)))
+
+(rf/reg-event-db
+ ::set-position
+ (fn [db [_ pos]]
+   (assoc-in db [:flex :position] pos)))
 
 ;; Subscriptions
 (rf/reg-sub
@@ -159,3 +165,8 @@
  ::get-dimen
  (fn [db [_ key]]
    (get-in db [:flex :dimen key])))
+
+(rf/reg-sub
+ ::get-position
+ (fn [db _]
+   (get-in db [:flex :position])))
