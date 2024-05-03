@@ -8,12 +8,12 @@ return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.co
 }),options)], null);
 });
 flex.width_height.width_height = (function flex$width_height$width_height(){
-return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),shadow.js.shim.module$react_native.View,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),utilities.screen_style], null),flex.width_height.option_view("width",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["auto",(300),"80%"], null),new cljs.core.Keyword(null,"width","width",-384071477)),flex.width_height.option_view("height",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["auto",(200),"60%"], null),new cljs.core.Keyword(null,"height","height",1025178622)),(function (){var with_let18628 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let18628","with-let18628",621708735));
-var temp__5808__auto___18631 = reagent.ratom._STAR_ratom_context_STAR_;
-if((temp__5808__auto___18631 == null)){
+return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),shadow.js.shim.module$react_native.View,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),utilities.screen_style], null),flex.width_height.option_view("width",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["auto",(300),"80%"], null),new cljs.core.Keyword(null,"width","width",-384071477)),flex.width_height.option_view("height",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["auto",(200),"60%"], null),new cljs.core.Keyword(null,"height","height",1025178622)),(function (){var with_let18772 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let18772","with-let18772",-217115610));
+var temp__5808__auto___18775 = reagent.ratom._STAR_ratom_context_STAR_;
+if((temp__5808__auto___18775 == null)){
 } else {
-var c__16352__auto___18632 = temp__5808__auto___18631;
-if((with_let18628.generation === c__16352__auto___18632.ratomGeneration)){
+var c__15598__auto___18776 = temp__5808__auto___18775;
+if((with_let18772.generation === c__15598__auto___18776.ratomGeneration)){
 if(reagent.debug.has_console){
 ((reagent.debug.tracking)?reagent.debug.track_console:console).error(["Warning: The same with-let is being used more ","than once in the same reactive context."].join(''));
 } else {
@@ -21,16 +21,16 @@ if(reagent.debug.has_console){
 } else {
 }
 
-(with_let18628.generation = c__16352__auto___18632.ratomGeneration);
+(with_let18772.generation = c__15598__auto___18776.ratomGeneration);
 }
 
-var init18629 = (with_let18628.length === (0));
-var width = ((((init18629) || (cljs.core.not(with_let18628.hasOwnProperty((0))))))?(with_let18628[(0)] = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("db","get-dimen","db/get-dimen",-58260006),new cljs.core.Keyword(null,"width","width",-384071477)], null))):(with_let18628[(0)]));
-var height = ((((init18629) || (cljs.core.not(with_let18628.hasOwnProperty((1))))))?(with_let18628[(1)] = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("db","get-dimen","db/get-dimen",-58260006),new cljs.core.Keyword(null,"height","height",1025178622)], null))):(with_let18628[(1)]));
-var res18630 = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),shadow.js.shim.module$react_native.View,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"padding","padding",1660304693),(10),new cljs.core.Keyword(null,"align-self","align-self",1475936794),new cljs.core.Keyword(null,"flex-start","flex-start",1432697815),new cljs.core.Keyword(null,"width","width",-384071477),cljs.core.deref(width),new cljs.core.Keyword(null,"height","height",1025178622),cljs.core.deref(height),new cljs.core.Keyword(null,"background-color","background-color",570434026),new cljs.core.Keyword(null,"aliceblue","aliceblue",-1185534108)], null)], null),utilities.build_demo_children.cljs$core$IFn$_invoke$arity$1((function (_){
+var init18773 = (with_let18772.length === (0));
+var width = ((((init18773) || (cljs.core.not(with_let18772.hasOwnProperty((0))))))?(with_let18772[(0)] = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("db","get-dimen","db/get-dimen",-58260006),new cljs.core.Keyword(null,"width","width",-384071477)], null))):(with_let18772[(0)]));
+var height = ((((init18773) || (cljs.core.not(with_let18772.hasOwnProperty((1))))))?(with_let18772[(1)] = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("db","get-dimen","db/get-dimen",-58260006),new cljs.core.Keyword(null,"height","height",1025178622)], null))):(with_let18772[(1)]));
+var res18774 = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),shadow.js.shim.module$react_native.View,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"padding","padding",1660304693),(10),new cljs.core.Keyword(null,"align-self","align-self",1475936794),new cljs.core.Keyword(null,"flex-start","flex-start",1432697815),new cljs.core.Keyword(null,"width","width",-384071477),cljs.core.deref(width),new cljs.core.Keyword(null,"height","height",1025178622),cljs.core.deref(height),new cljs.core.Keyword(null,"background-color","background-color",570434026),new cljs.core.Keyword(null,"aliceblue","aliceblue",-1185534108)], null)], null),utilities.build_demo_children.cljs$core$IFn$_invoke$arity$1((function (_){
 return cljs.core.PersistentArrayMap.EMPTY;
 }))], null);
-return res18630;
+return res18774;
 })()], null);
 });
 
